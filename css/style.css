@@ -1,0 +1,402 @@
+/* Main container */
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid red;
+    padding: 10px;
+	box-sizing: border-box; /* important */
+}
+
+
+
+
+/* Top banner */
+.hgroup {
+	background-image: url("../image/lappeenranta_linnoitus.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    color: white;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+/* Dark overlay */
+.hgroup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+.title {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Navigation */
+.nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.nav a {
+    text-decoration: none;
+    background: rgba(255,255,255,0.7);
+    color: black;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background: white;
+}
+
+/* Header */
+header {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border: 2px solid green;
+	text-align:center;
+}
+
+/* Content layout */
+.content {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* LEFT */
+.main-content {
+    flex: 3;
+    background-color: yellow;
+    padding: 10px;
+    color: red;
+}
+
+
+/* Footer */
+footer {
+    background-color: green;
+    color: black;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid blue;
+    text-align: center;
+}
+
+
+/* Images */
+img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+}
+
+/* Text spacing */
+p {
+    margin-bottom: 15px;
+}
+
+.big-box {
+    height: 200px; /* give enough height */
+    display: flex;
+    justify-content: center;   /* center all 3 horizontally */
+    align-items: center;       /* center vertically */
+    gap: 20px;                 /* space between boxes */
+}
+
+.big-box div {
+	
+	width: 150px;
+	height:150px;
+   
+    display: flex;
+    justify-content: center;   /* center content inside each div */
+    align-items: center;
+    border: 1px solid black;
+ 
+}
+
+/* control image size */
+.big-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/**/
+
+
+.table1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* center table */
+    overflow-x: visible;      /* no scroll on big screens */
+}
+
+table {
+    border: 5px solid blue;
+    width: 70%;               /* nice centered size */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+th, td {
+    padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+tr:hover {
+    background-color: #ddd;
+	border: 1px solid white;
+}
+
+
+/**/
+
+
+        form {
+            background-color: white;
+            width: 80%;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #999;
+        }
+     
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0066cc;
+        }
+
+
+/**/
+
+
+.form1 {   
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    padding: 20px;            /* spacing inside the div */
+    border: 1px solid black;  /* optional, for visibility */
+    box-sizing: border-box;
+    min-height: 100vh;        /* full viewport height */
+    align-items: flex-start;  /* vertical alignment; flex-start prevents cutting off */
+    background-color: #f9f9f9; /* optional, light background */
+}
+
+form {
+    width: 100%;
+    max-width: 500px;   /* keeps form from getting too wide */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;          /* spacing between form fields */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+
+/**/
+
+.travel {
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	column-gap:10px;
+	
+} 
+.travel img {
+	border:1px solid;
+	border-radius: 20px;
+	
+}
+
+
+
+
+/**/
+
+a:link {
+  color:                 red;
+  text-decoration:         none;
+}
+
+/* visited link */
+a:visited {
+  color:                 green;
+  text-decoration:         none;
+  
+}
+
+/* mouse over link */
+a:hover {
+  color:                 hotpink;
+  text-decoration:         none;
+}
+
+/* selected link */
+a:active {
+  color:                 blue;
+  text-decoration:         none;
+}
+
+
+.linkki_sivu {
+	text-align: center;
+	margin-bottom:10px;
+}
+
+
+/**/
+
+
+.log_kuva {
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	column-gap:5px;
+	
+	
+} 
+.log_kuva img {
+	border:1px solid;
+	border-radius: 20px;
+	object-fit: cover;	
+}  
+
+/**/
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+
+
+
+
+
+/**/
+.nav {
+    display: flex;
+    flex-direction: row; /* horizontal menu */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+	gap: 10px; /* spacing between links */
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;  /* vertical menu  */  /* should stay inside not go out of nav place */
+        position: static;     /* natural flow */
+        transform: none;
+        justify-content: right;
+        
+		align-items:center;
+    }
+
+    .title {
+        text-align: center;
+        position: static;
+        transform: none;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .table1 {
+        display: block;        /* remove flex */
+        overflow-x: auto;      /* enable scroll ONLY here */
+    }
+
+    table {
+        width: 100%;           /* fill screen */
+        min-width: 500px;      /* prevent breaking */
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
+
