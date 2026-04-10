@@ -296,33 +296,33 @@ h1, h2 {
 /**/
 
 a:link {
-  color:                 red;
+  color:                 #D80000;
   text-decoration:         none;
 }
 
 /* visited link */
 a:visited {
-  color:                 green;
+  color:                 #005500;
   text-decoration:         none;
   
 }
 
 /* mouse over link */
 a:hover {
-  color:                 hotpink;
-  text-decoration:         none;
+  color:                 #FF1493;
+  text-decoration:         underline;
 }
 
 /* selected link */
 a:active {
-  color:                 blue;
+  color:                 #00008B;
   text-decoration:         none;
 }
 
 
 .linkki_sivu {
 	text-align: center;
-	margin-bottom:10px;
+	margin-bottom: 10 px;
 }
 
 
